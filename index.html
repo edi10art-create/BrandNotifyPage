@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2W1QWRYZ86"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-2W1QWRYZ86');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BrandNotify | Serviço de Presença Recorrente da Marca</title>
+
+    <meta name="description"
+        content="BrandNotify é um serviço por assinatura que utiliza uma ferramenta Android personalizada para manter sua marca presente no celular dos clientes de forma útil, natural e não invasiva.">
+
+    <meta name="keywords"
+        content="BrandNotify, presença de marca, marketing mobile, aplicativo personalizado, branding, marketing não invasivo, ferramenta para empresas, relacionamento com clientes">
+
+    <meta name="author" content="Eduardo Theodulo Soares">
+
+    <link rel="icon" type="image/png" href="assets/brandnotify-144.png">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "BrandNotify",
+      "serviceType": "Serviço de presença recorrente de marca",
+      "description": "Serviço personalizado por assinatura que utiliza uma ferramenta Android para manter a marca de empresas presente no celular de seus clientes por meio de recursos úteis e não invasivos.",
+      "url": "https://brandnotify.com.br",
+      "provider": {
+        "@type": "Person",
+        "name": "Eduardo Theodulo Soares"
+      }
+    }
+    </script>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            width: 100%;
+            background: #111;
+            text-align: center;
+            padding: 20px 15px 10px;
+        }
+
+        .hero-img {
+            width: 100%;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+
+        .hero-img img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 55px 25px;
+        }
+
+        .hero h1 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 2.4rem;
+            line-height: 1.15;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .section {
+            width: 100%;
+            padding: 45px 25px;
+        }
+
+        .box {
+            border-radius: 14px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        p,
+        li {
+            font-size: 17px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .grad1 {
+            background: linear-gradient(135deg, #ffffff, #e7e7e7);
+        }
+
+        .grad2 {
+            background: linear-gradient(135deg, #f8d96a, #f2bd32);
+        }
+
+        .grad3 {
+            background: linear-gradient(135deg, #d8d8d8, #f4f4f4);
+        }
+
+        .grad4 {
+            background: linear-gradient(135deg, #f4d95c, #eeb82b);
+        }
+
+        .grad5 {
+            background: linear-gradient(135deg, #222, #444);
+            color: #fff;
+        }
+
+        .grad6 {
+            background: linear-gradient(135deg, #111, #333);
+            color: #fff;
+        }
+     
+       
+        .mockup {
+            text-align: center;
+            background: #111;
+            padding: 20px 15px;
+        }
+
+        .mockup img {
+            display: block;
+            max-width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .video-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            padding: 30px 15px;
+        }
+
+        .video-item {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .video-item iframe {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        details {
+            background: rgba(255, 255, 255, 0.65);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 17px 20px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        details p {
+            padding: 0 20px 15px;
+            margin: 0;
+        }
+
+        .btn {
+            display: block;
+            width: fit-content;
+            min-width: 240px;
+            margin: 15px auto;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .demo {
+            background: #f2bd32;
+            color: #111;
+        }
+
+        .instr {
+            background: #fff;
+            color: #111;
+        }
+
+        .whatsapp {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .hotmart {
+            background: #ff5a00;
+            color: #fff;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+
+            .video-wrapper {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+            }
+
+            p,
+            li {
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+         CABEÇALHO
+         Substituir futuramente o banner por uma versão
+         exclusivamente BrandNotify.
+         ========================================================= -->
+
+    <header>
+
+        <div class="hero-img">
+            <img src="assets/BrandNotifyCab.webp"
+                alt="BrandNotify - Serviço de presença recorrente de marca">
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+
+        <!-- =========================================================
+             HERO
+             ========================================================= -->
+
+        <section class="hero">
+
+            <h1>Uma nova forma de manter sua marca por perto.</h1>
+
+            <p>
+                O BrandNotify é um serviço de presença recorrente de marca criado
+                para manter sua empresa presente no dia a dia dos clientes.
+
+                Para isso, cada empresa recebe uma ferramenta Android personalizada
+                com sua identidade visual e recursos úteis, criando um ponto de
+                contato entre a marca e o público.
+
+                Mais do que publicidade, o BrandNotify transforma utilidade em
+                presença: sua marca não aparece apenas quando o cliente procura
+                por ela. Ela permanece presente, acessível e integrada ao cotidiano.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================================
+             PROBLEMA / DIFERENCIAL
+             ========================================================= -->
+
+        <section class="hero">
+
+            <h2>
+                O espaço entre uma compra e a próxima também pode pertencer à sua marca.
+            </h2>
+
+            <p>
+                Redes sociais, anúncios e campanhas disputam atenção em ambientes
+                controlados por algoritmos e orçamentos.
+
+                O BrandNotify propõe outra possibilidade: entregar uma pequena
+                ferramenta útil que o cliente mantém no próprio celular.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================================
+             FERRAMENTA PERSONALIZADA
+             ========================================================= -->
+
+        <section class="section box grad1">
+
+            <h2>Como é a ferramenta personalizada?</h2>
+
+            <p>
+                Cada empresa recebe um aplicativo Android personalizado com sua
+                identidade visual e recursos úteis para o dia a dia, como lembretes
+                e monitoramento da bateria, configurável pelo próprio usuário.
+            </p>
+
+            <p>
+                A marca passa a fazer parte da experiência do aplicativo de forma
+                natural, sem depender de publicidade invasiva ou interrupções constantes.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================================
+             MOCKUP
+             ========================================================= -->
+
+        <section class="section mockup">
+
+            <img src="assets/MockupBrandNotify (2).webp"
+                alt="Ferramenta BrandNotify personalizada com a marca da empresa">
+
+        </section>
+
+
+        <!-- =========================================================
+             COMO FUNCIONA
+             ========================================================= -->
+
+        <section class="section box grad2">
+
+            <h2>Como funciona?</h2>
+
+            <ul>
+
+                <li>
+                    A empresa recebe uma ferramenta Android personalizada
+                    com sua identidade visual.
+                </li>
+
+                <li>
+                    O aplicativo é distribuído pela própria empresa aos seus clientes.
+                </li>
+
+                <li>
+                    O cliente instala e utiliza os recursos disponíveis
+                    no aplicativo.
+                </li>
+
+                <li>
+                    O botão <strong>Saiba Mais</strong> conduz diretamente ao
+                    conteúdo online da empresa.
+                </li>
+
+                <li>
+                    Esse conteúdo pode apresentar produtos, ofertas, notícias,
+                    campanhas, catálogos, cardápios ou outras informações
+                    escolhidas pela empresa.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =========================================================
+             VÍDEOS
+             ========================================================= -->
+
+        <section class="video-wrapper">
+
+            <div class="video-item">
+
+                <iframe
+                    src="https://www.youtube.com/embed/ivfOQj1AFJQ"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <div class="video-item">
+
+                <iframe
+                    src="https://www.youtube.com/embed/4Xd7FAs8oOA"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             VALOR
+             ========================================================= -->
+
+        <section class="section box" style="background:#f3f2ae;">
+
+            <h2>O valor está na combinação.</h2>
+
+            <p>
+                Um aplicativo puramente promocional tende a encontrar resistência.
+                Uma ferramenta útil tem outra relação com o usuário.
+            </p>
+
+            <p>
+                O BrandNotify parte dessa ideia: primeiro existe uma razão prática
+                para manter o aplicativo instalado; a marca acompanha essa experiência
+                sem precisar interrompê-la.
+            </p>
+
+            <p>
+                O resultado é um ponto de contato permanente com o cliente,
+                sem depender exclusivamente da próxima publicação, campanha
+                ou entrega de anúncio.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================================
+             FAQ
+             ========================================================= -->
+
+        <section class="section box grad4">
+
+            <h2>Perguntas frequentes</h2>
+
+
+            <details>
+
+                <summary>O aplicativo é personalizado?</summary>
+
+                <p>
+                    Sim. O aplicativo é preparado para cada empresa com sua
+                    identidade visual, nome e destino definido para o botão
+                    <strong>Saiba Mais</strong>.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>O que o cliente encontra no aplicativo?</summary>
+
+                <p>
+                    O BrandNotify reúne funções práticas, como lembretes e
+                    monitoramento da bateria, além da interface personalizada
+                    da empresa.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>Para onde leva o botão "Saiba Mais"?</summary>
+
+                <p>
+                    Para a página escolhida pela empresa. Pode ser um site,
+                    catálogo, cardápio, blog, jornal, promoção ou outro conteúdo
+                    que faça sentido para o negócio.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Posso usar o BrandNotify para divulgar produtos da minha loja?
+                </summary>
+
+                <p>
+                    Sim. A página pode apresentar produtos, ofertas e outras
+                    informações da empresa.
+                </p>
+
+                <p>
+                    Ao clicar em um produto, o cliente pode ser direcionado
+                    diretamente para a loja oficial da empresa, onde a compra
+                    é realizada.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>Quem atualiza a página?</summary>
+
+                <p>
+                    A empresa envia os conteúdos que deseja publicar, como notícias,
+                    campanhas, ofertas, imagens e informações.
+                </p>
+
+                <p>
+                    O BrandNotify realiza a publicação e mantém a estrutura
+                    da página.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>Como funciona a assinatura?</summary>
+
+                <p>
+                    A assinatura mantém a estrutura online do BrandNotify para
+                    a empresa, incluindo hospedagem, manutenção e atualização
+                    da página personalizada acessada pelo botão
+                    <strong>Saiba Mais</strong>.
+                </p>
+
+                <p>
+                    A empresa fornece os textos, imagens, ofertas e demais conteúdos.
+                    O BrandNotify cuida da publicação e da manutenção da estrutura online.
+                </p>
+
+            </details>
+
+
+            <!-- NOVA PERGUNTA COMERCIAL IMPORTANTE -->
+
+            <details>
+
+                <summary>O que acontece se eu cancelar a assinatura?</summary>
+
+                <p>
+                    Os aplicativos que já foram distribuídos aos clientes não
+                    são apagados. A marca continua presente na ferramenta instalada
+                    no celular.
+                </p>
+
+                <p>
+                    O que deixa de ser mantido é a parte dinâmica do serviço,
+                    como a página personalizada acessada pelo botão
+                    <strong>Saiba Mais</strong> e os serviços online associados
+                    à assinatura.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    O BrandNotify coleta dados pessoais ou rastreia o usuário?
+                </summary>
+
+                <p>
+                    A proposta apresentada nesta página é de uma ferramenta simples
+                    e não invasiva, sem coleta de dados pessoais, rastreamento ou
+                    notificações promocionais constantes.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    O BrandNotify pode ser oferecido como benefício ao cliente?
+                </summary>
+
+                <p>
+                    Sim. A empresa pode oferecer o aplicativo personalizado como
+                    uma ferramenta útil aos seus clientes, associando a identidade
+                    da marca a uma experiência prática no celular.
+                </p>
+
+            </details>
+
+        </section>
+
+
+        <!-- =========================================================
+             BENEFÍCIOS
+             ========================================================= -->
+
+        <section class="section box grad3">
+
+            <h2>Simples para o usuário. Interessante para a marca.</h2>
+
+            <ul>
+
+                <li>Sem coleta de dados pessoais.</li>
+
+                <li>Sem rastreamento.</li>
+
+                <li>Sem notificações invasivas.</li>
+
+                <li>
+                    Sem depender de conexão constante para os recursos básicos
+                    do aplicativo.
+                </li>
+
+                <li>
+                    Aplicativo leve, desenvolvido para uma função prática.
+                </li>
+
+            </ul>
+
+            <p>
+                A proposta é que a presença da marca seja consequência da
+                utilidade do produto, e não de interrupções.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================================
+             DEMO
+             ========================================================= -->
+
+        <section class="section box grad1">
+
+            <h2>Veja antes de decidir.</h2>
+
+            <p>
+                Faça um test drive. O Demo permite experimentar o aplicativo
+                personalizado, testar os lembretes, configurar os avisos de
+                bateria e visualizar como sua logomarca pode ficar presente
+                na ferramenta.
+            </p>
+
+        </section>
+
+
+        <a class="btn demo"
+            href="https://github.com/edi10art-create/lojasuperdu/releases/download/1.1/BrandNotify.Demo.apk"
+            target="_blank"
+            rel="noopener">
+
+            Baixar BrandNotify Demo
+
+        </a>
+
+
+        <br><br>
+
+
+        <!-- =========================================================
+             INSTALAÇÃO
+             ========================================================= -->
+
+        <section class="section box grad3">
+
+            <h3>Instalação simples e segura</h3>
+
+            <p>
+                O BrandNotify é uma ferramenta Android leve e personalizada,
+                desenvolvida para proporcionar uma experiência prática.
+                Como a instalação é feita diretamente no celular, preparamos
+                uma página com todas as orientações necessárias.
+            </p>
+
+            <p>
+                <strong>Quer ver como funciona?</strong>
+                Acesse o guia de instalação e acompanhe o passo a passo.
+            </p>
+
+        </section>
+
+
+        <br><br>
+
+
+        <a class="btn instr"
+            href="https://brandnotify.com.br/dudu"
+            target="_blank"
+            rel="noopener">
+
+            Ver instruções de instalação
+
+        </a>
+
+
+        <br><br>
+
+
+        <!-- =========================================================
+             GRANDE DIFERENCIAL COMERCIAL
+             ========================================================= -->
+
+        <section class="section box grad1">
+
+            <h2>
+                BrandNotify não funciona como um anúncio que desaparece.
+            </h2>
+
+            <p>
+                Na publicidade tradicional, a exposição termina quando a campanha
+                termina. Para voltar a aparecer, é preciso investir novamente.
+            </p>
+
+            <p>
+                No BrandNotify, a empresa entrega uma ferramenta personalizada
+                que pode continuar presente no celular dos clientes que a instalaram.
+            </p>
+
+            <p>
+                A assinatura mantém a parte dinâmica do serviço, como a página
+                acessada pelo botão <strong>Saiba Mais</strong>.
+            </p>
+
+            <p>
+                Se a assinatura for encerrada, os aplicativos já distribuídos
+                não são apagados e a identidade da marca continua presente neles.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================================
+             PAGAMENTO
+             ========================================================= -->
+
+        <section class="section center"> 
+           <p style="color: #ffffff;"> 
+              <strong>Pagamento seguro via Hotmart.</strong> 
+           </p> 
+        </section>
+
+
+        <a class="btn hotmart"
+            href="https://lojasuperdu.hotmart.host/brandnotify-presenca-permanente-de-marca-no-celular-do-cliente-1d7558e4-01b5-4486-b485-e6640d3935e8"
+            target="_blank"
+            rel="noopener">
+
+            Quero a solução BrandNotify
+
+        </a>
+
+       <br><br>
+
+        <!-- =========================================================
+             MOCKUP FINAL
+             ========================================================= -->
+
+        <section class="section mockup">
+
+            <img src="assets/Bucks Burgers Celular na mesa.webp"
+                alt="Marca da empresa presente no celular do cliente">
+
+        </section>
+
+
+        <!-- =========================================================
+             CONTATO
+             ========================================================= -->
+
+        <section class="section box grad1">
+
+            <h2>
+                Quer conversar sobre uma aplicação para sua empresa?
+            </h2>
+
+            <p>
+                Se a ideia fizer sentido para o seu negócio, podemos conversar
+                sobre personalização, conteúdo e utilização.
+            </p>
+
+        </section>
+
+
+        <a class="btn whatsapp"
+            href="https://wa.me/5511976478704?text=Quero%20conhecer%20o%20BrandNotify%20para%20minha%20empresa"
+            target="_blank"
+            rel="noopener">
+
+            WhatsApp
+
+        </a>
+
+
+        <br><br>
+
+
+        <!-- =========================================================
+             RODAPÉ
+             ========================================================= -->
+
+        <footer class="section box grad5">
+
+            <h3>BrandNotify</h3>
+
+            <p>
+                Serviço de presença recorrente de marca por assinatura.
+            </p>
+
+            <p>
+                Desenvolvido por Eduardo Theodulo Soares
+            </p>
+
+            <p>
+                © 2026 BrandNotify - Todos os direitos reservados.
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- Cloudflare Insights -->
+
+    <script
+        type="module"
+        src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+        integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
+        data-cf-beacon='{"version":"2024.11.0","token":"7284e625840a4d61a87560a899bacff1","r":1,"spa":2}'
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
