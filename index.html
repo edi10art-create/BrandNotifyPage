@@ -46,277 +46,294 @@
 
     <style>
 
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        body {
-            margin: 0;
-            padding: 0;
-            background: #111;
-            color: #222;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
 
-        .container {
-            width: 100%;
-            max-width: 1100px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
-        header {
-            width: 100%;
-            background: #111;
-            text-align: center;
-            padding: 20px 15px 10px;
-        }
+/* CABEÇALHO */
 
-        .hero-img {
-            width: 100%;
-            margin: 0 auto 20px;
-            text-align: center;
-        }
+header {
+    width: 100%;
+    background: #111;
+    text-align: center;
+    padding: 20px 15px 10px;
+}
 
-        .hero-img img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-        }
+.hero-img {
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
 
-        .hero {
-            background: #111;
-            color: #fff;
-            text-align: center;
-            padding: 55px 25px;
-        }
+.hero-img img {
+    display: block;
+    width: 80%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
 
-        .hero h1 {
-            margin-top: 0;
-            margin-bottom: 25px;
-            font-size: 2.4rem;
-            line-height: 1.15;
-        }
+/* HERO */
 
-        .hero h2 {
-            margin-top: 0;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
+.hero {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 55px 25px;
+}
 
-        .hero p {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
+.hero h1 {
+    margin: 0 0 25px;
+    font-size: 2.4rem;
+    line-height: 1.15;
+}
 
-        .section {
-            width: 100%;
-            padding: 45px 25px;
-        }
+.hero h2 {
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
 
-        .box {
-            border-radius: 14px;
-            margin-bottom: 25px;
-        }
+.hero p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
 
-        h2 {
-            margin-top: 0;
-            font-size: 1.8rem;
-            line-height: 1.2;
-        }
+/* SEÇÕES */
 
-        h3 {
-            font-size: 1.5rem;
-            line-height: 1.2;
-        }
+.section {
+    width: 100%;
+    padding: 45px 25px;
+}
 
-        p,
-        li {
-            font-size: 17px;
-        }
+.box {
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
 
-        ul {
-            padding-left: 25px;
-        }
+h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
 
-        li {
-            margin-bottom: 12px;
-        }
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
 
-        .grad1 {
-            background: linear-gradient(135deg, #ffffff, #e7e7e7);
-        }
+p,
+li {
+    font-size: 17px;
+}
 
-        .grad2 {
-            background: linear-gradient(135deg, #f8d96a, #f2bd32);
-        }
+ul {
+    padding-left: 25px;
+}
 
-        .grad3 {
-            background: linear-gradient(135deg, #d8d8d8, #f4f4f4);
-        }
+li {
+    margin-bottom: 12px;
+}
 
-        .grad4 {
-            background: linear-gradient(135deg, #f4d95c, #eeb82b);
-        }
+/* GRADIENTES */
 
-        .grad5 {
-            background: linear-gradient(135deg, #222, #444);
-            color: #fff;
-        }
+.grad1 {
+    background: linear-gradient(135deg, #fff, #e7e7e7);
+}
 
-        .grad6 {
-            background: linear-gradient(135deg, #111, #333);
-            color: #fff;
-        }
-     
-       
-        .mockup {
-            text-align: center;
-            background: #111;
-            padding: 20px 15px;
-        }
+.grad2 {
+    background: linear-gradient(135deg, #f8d96a, #f2bd32);
+}
 
-       .mockup img {
-           display: block;
-           width: 100%;
-           max-width: 650px;
-           height: auto;
-           margin: 0 auto;
-        }
+.grad3 {
+    background: linear-gradient(135deg, #d8d8d8, #f4f4f4);
+}
 
-        .video-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            justify-content: center;
-            align-items: center;
-            background: #111;
-            padding: 30px 15px;
-        }
+.grad4 {
+    background: linear-gradient(135deg, #f4d95c, #eeb82b);
+}
 
-        .video-item {
-            width: 100%;
-            max-width: 320px;
-       }
+.grad5 {
+    background: linear-gradient(135deg, #222, #444);
+    color: #fff;
+}
 
-        .video-item iframe {
-           display: block;
-           width: 100%;
-           aspect-ratio: 9 / 16;
-           border: 0;
-           border-radius: 12px;
-      }
+.grad6 {
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+}
 
-        details {
-            background: rgba(255, 255, 255, 0.65);
-            border-radius: 10px;
-            margin-bottom: 12px;
-            padding: 0;
-            overflow: hidden;
-        }
+/* MOCKUPS */
 
-        summary {
-            cursor: pointer;
-            padding: 17px 20px;
-            font-weight: bold;
-            font-size: 17px;
-        }
+.mockup {
+    text-align: center;
+    background: #111;
+    padding: 20px 15px;
+}
 
-        details p {
-            padding: 0 20px 15px;
-            margin: 0;
-        }
+.mockup img {
+    display: block;
+    width: 80%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
 
-        .btn {
-            display: block;
-            width: fit-content;
-            min-width: 240px;
-            margin: 15px auto;
-            padding: 15px 25px;
-            border-radius: 10px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 17px;
-            transition: transform 0.2s ease, opacity 0.2s ease;
-        }
+/* VÍDEOS */
 
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
-        }
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    padding: 30px 15px;
+}
 
-        .demo {
-            background: #f2bd32;
-            color: #111;
-        }
+.video-item {
+    width: 100%;
+    max-width: 320px;
+}
 
-        .instr {
-            background: #fff;
-            color: #111;
-        }
+.video-item iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border: 0;
+    border-radius: 12px;
+}
 
-        .whatsapp {
-            background: #25d366;
-            color: #fff;
-        }
+/* FAQ */
 
-        .hotmart {
-            background: #ff5a00;
-            color: #fff;
-        }
+details {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
 
-        .center {
-            text-align: center;
-        }
+summary {
+    cursor: pointer;
+    padding: 17px 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
 
-        footer {
-            text-align: center;
-        }
+details p {
+    padding: 0 20px 15px;
+    margin: 0;
+}
 
-        @media (min-width: 768px) {
+/* BOTÕES */
 
-            .video-wrapper {
-                flex-direction: row;
-                justify-content: center;
-            }
-            
-             .mockup img {
-                 max-width: 650px;
-            }
+.btn {
+    display: block;
+    width: fit-content;
+    min-width: 240px;
+    margin: 15px auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
 
-            .hero h1 {
-                font-size: 3rem;
-            }
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
 
-            .hero p {
-                font-size: 1.3rem;
-            }
+.demo {
+    background: #f2bd32;
+    color: #111;
+}
 
-            h2 {
-                font-size: 2rem;
-            }
+.instr {
+    background: #fff;
+    color: #111;
+}
 
-            h3 {
-                font-size: 1.6rem;
-            }
+.whatsapp {
+    background: #25d366;
+    color: #fff;
+}
 
-            p,
-            li {
-                font-size: 18px;
-            }
+.hotmart {
+    background: #ff5a00;
+    color: #fff;
+}
 
-        }
+/* ALINHAMENTO */
 
-    </style>
+.center {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+    .video-wrapper {
+        flex-direction: row;
+    }
+
+    .mockup img {
+        width: 55%;
+        max-width: 500px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p,
+    li {
+        font-size: 18px;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -328,18 +345,16 @@
          exclusivamente BrandNotify.
          ========================================================= -->
 
-    <header>
-
-        <div class="hero-img">
-            <img src="assets/Mockup4-BrandNotify.webp"
-                alt="BrandNotify - Serviço de presença recorrente de marca">
-        </div>
-
-    </header>
-
+    
 
     <main class="container">
 
+          <section class="section mockup">
+
+            <img src="assets/Mockup4-BrandNotify.webp"
+                alt="Marca da empresa presente no celular do cliente">
+
+        </section>
 
         <!-- =========================================================
              HERO
