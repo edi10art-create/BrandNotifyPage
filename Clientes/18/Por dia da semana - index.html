@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecionando...</title>
+</head>
+
+<body>
+
+<script>
+    const paginas = {
+        0: "domingo.html",
+        1: "segunda.html",
+        2: "terca.html",
+        3: "quarta.html",
+        4: "quinta.html",
+        5: "sexta.html",
+        6: "sabado.html"
+    };
+
+    const hoje = new Date().getDay();
+
+    window.location.replace(paginas[hoje]);
+</script>
+
+</body>
+</html>
